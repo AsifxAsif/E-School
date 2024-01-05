@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+nav {
+    background-color: #f0fff0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    color: black;
+}
+
+.logo h3 {
+    color: #56548C;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+nav img {
+    width: 75px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 33px;
+    background-color: #21B573;
+}
+
+header {
+    background-color: #f0fff0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+header span {
+    color: #21B573;
+}
+
+.red {
+    color: #FD511A;
+}
+
+.large {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.box-container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: #F5FFFA;
+    color: black;
+    width: 100%;
+    max-width: 250px;
+    height: 220px;
+    padding-top: 40px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 4px 16px rgb(212, 212, 212);
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 4px 8px 16px grey;
+}
+
+.detail {
+    color: #413960;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+main {
+    text-align: center;
+}
+
+main span {
+    color: #413960;
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    padding-top: 105px;
+    padding-bottom: 80px;
+}
+
+.course-container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course {
+    background-color: white;
+    color: black;
+    width: px;
+    max-width: 370px;
+    height: 483px;
+    text-align: left;
+    border-radius: 18px;
+    box-shadow: 2px 4px 16px rgb(212, 212, 212);
+    margin: 10px;
+    padding: 20px;
+}
+
+.course-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture {
+    width: 331px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    padding-right: 6px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.seat {
+    display: flex;
+    align-items: center;
+}
+
+#icon {
+    padding: 0 50px;
+}
+
+#testimonial {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 77px;
+}
+
+footer {
+    color: white;
+    background-color: #282531;
+    padding: 55px;
+    text-align: center;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 75px;
+}
+
+.align {
+    text-align: left;
+    max-width: 600px;
+}
+
+footer ul {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+}
+
+#bold {
+    font-weight: 700;
+}
+
+#copyright {
+    padding-top: 77px;
+}
+
+#align {
+    text-align: left;
+    width: 380px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    header img {
+        width: 100%;
+        height: auto;
+    }
+
+    .box {
+        max-width: 100%;
+    }
+
+    .course {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .box-container,
+    .course-container {
+        margin: 10px;
+    }
+
+    .picture {
+        width: 100%;
+        height: auto;
+    }
+
+    main span {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .align {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    #align {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    footer section {
+        flex-direction: column;
+    }
+
+    footer ul {
+        margin: 10px;
+    }
+}
